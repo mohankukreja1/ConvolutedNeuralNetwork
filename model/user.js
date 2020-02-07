@@ -2,27 +2,17 @@ var mongoose=require('mongoose');
 var bcrypt=require('bcrypt-nodejs');
 
 var studentSchema=mongoose.Schema({
-    admissionNumber : {
-        type:String,
-	    default: null
-    },
-	rollNumber:{
+    
+	yearOfGraduation:{
 		type:String,
 		default: null
 	},
-	school:{
+	college:{
 		type:String,
 		default: null
 	},
-	ratingSum:{
-		type:Number,
-		default:null
-	},
-	ratingNumber:{
-		type:Number,
-		default:null
-	},
-	address:{
+	
+	DOB:{
 		type:String,
 		default: null
 	},
@@ -39,11 +29,11 @@ var studentSchema=mongoose.Schema({
         type:String,
 	    default: null
     },
-    class_section:{
+    email:{
         type:String,
 	    default: null
     },
-	email:{
+	CGPA:{
 		type:String,
 		default: null
 	},
@@ -55,51 +45,33 @@ var studentSchema=mongoose.Schema({
 		type:String,
 		default: null
 	},
-	age:{
-		type:String,
-		default: null
-	},
+	
 
-	subject:{
-		type:Array,
+	percent10:{
+		type:Number,
 		default: null
 	},
-	discipline:{
+	percent12:{
 		type:Number,
 		default:null
 	},
-	understanding:{
+	gender:{
+		type:String,
+		default:null
+	},
+	citizenship:{
+		type:String,
+		default:null
+	},
+	homeTown:{
 		type:Number,
 		default:null
 	},
-	tackling:{
-		type:Number,
-		default:null
-	},
-	participation:{
-		type:Number,
-		default:null
-	},
-	punctuality:{
-		type:Number,
-		default:null
-	},
-	creativity:{
-		type:Number,
-		default:null
-	},
-	curiosity:{
-		type:Number,
-		default:null
-	},
-	interaction:{
-		type:Number,
-		default:null
-	},
-	listening:{
+	univId:{
 		type:Number,
 		default:null
 	}
+	
 
 
 
